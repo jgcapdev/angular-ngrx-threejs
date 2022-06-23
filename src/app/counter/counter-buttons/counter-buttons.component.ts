@@ -24,8 +24,4 @@ export class CounterButtonsComponent implements OnInit {
   onReset() {
     this.store.dispatch(reset());
   }
-
-sumar() {
-  
- }
 }
