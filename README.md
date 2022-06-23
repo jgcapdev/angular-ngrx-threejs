@@ -7,7 +7,7 @@
 ## Table of contents 👇
 
 - [✨ How to install](#-how-to-install)
-- [🕸️ Install dependencies](#-install-dependencies)
+- [🔥 Install dependencies](#-install-dependencies)
 - [🚀 Deployment](#-deployment)
 
 ## ✨ How to install
