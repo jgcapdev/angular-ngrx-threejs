@@ -14,7 +14,7 @@
 
 Simply run `git clone` and then `npm install --legacy-peer-deps`.
 
-## 🕸️ Install dependencies
+## 🔥 Install dependencies
 
 - Install Angular Three with `npm install --save-dev @angular-three/schematics ` and `npx nx generate @angular-three/schematics:init`
 - Install NGRX with `nnpm install @ngrx/store --save`.
