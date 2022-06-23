@@ -18,6 +18,16 @@ Simply run `git clone` and then `npm install --legacy-peer-deps`.
 
 - Install Angular Three with `npm install --save-dev @angular-three/schematics ` and `npx nx generate @angular-three/schematics:init`
 - Install NGRX with `nnpm install @ngrx/store --save`.
+- Install NgRx DevToos with `npm install @ngrx/store-devtools --save --legacy-peer-deps` and add
+
+```js
+StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: environment.production,
+    }),
+```
+
+into the `app.modulle.ts`. Then, you need add a Chrome extension called [Redux devtoos](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=es) in order to add a new tab in _Developer tools_ of Chrone.
 
 If you need to install another Angular Three dependency (for example Soba) add it with `npm i @angular-three/soba --legacy-peer-deps`.
 

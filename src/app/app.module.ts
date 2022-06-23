@@ -1,20 +1,22 @@
+// modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// configs
 import { AppRoutingModule } from './app-routing.module';
 
+// components
 import { AppComponent } from './app.component';
-
-// COUNTER
 import { CounterComponent } from './counter/counter/counter.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 
-// NGRX
+// ngrx modules
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './counter/state/counter.reducer';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
-// ANGULAR THREE
+// angular three
 import { NgtCanvasModule } from '@angular-three/core';
 import { NgtMeshModule } from '@angular-three/core/meshes';
 import {
@@ -34,6 +36,7 @@ import {
   NgtDirectionalLightModule,
 } from '@angular-three/core/lights';
 import { NgtSobaOrbitControlsModule } from '@angular-three/soba/controls';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,10 @@ import { NgtSobaOrbitControlsModule } from '@angular-three/soba/controls';
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({ counter: counterReducer }),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: environment.production,
+    }),
     NgtCanvasModule,
     NgtMeshModule,
     NgtBoxGeometryModule,
