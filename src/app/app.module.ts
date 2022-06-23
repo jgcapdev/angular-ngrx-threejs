@@ -1,6 +1,7 @@
 // modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 // configs
 import { AppRoutingModule } from './app-routing.module';
@@ -66,6 +67,7 @@ import { environment } from 'src/environments/environment';
     NgtPointLightModule,
     NgtDirectionalLightModule,
     NgtSobaOrbitControlsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

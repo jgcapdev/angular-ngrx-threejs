@@ -7,12 +7,26 @@
 ## Table of contents 👇
 
 - [✨ How to install](#-how-to-install)
+- [🔧 Project scaffolding](#-project-scaffolding)
 - [🔥 Install dependencies](#-install-dependencies)
 - [🚀 Deployment](#-deployment)
 
 ## ✨ How to install
 
 Simply run `git clone` and then `npm install --legacy-peer-deps`.
+
+## 🔧 Project scaffolding
+
+Inside `app` folder there are several new directories as you can see in the following scaffolding.
+
+.
+├── core
+│ └── models
+├── state
+│ ├── actions
+│ ├── reducers
+│ └── selectors
+└── ...
 
 ## 🔥 Install dependencies
 
