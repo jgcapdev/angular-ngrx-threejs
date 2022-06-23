@@ -13,7 +13,7 @@
 
 ## ✨ How to install
 
-Simply run `git clone` and then `npm install --legacy-peer-deps`.
+Simply run `git clone` and then `npm install --legacy-peer-deps`. You need to use Angular CLI 14.0.2.
 
 ## 🔧 Project scaffolding
 
