@@ -19,6 +19,7 @@ Simply run `git clone` and then `npm install --legacy-peer-deps`.
 
 Inside `app` folder there are several new directories as you can see in the following scaffolding.
 
+```
 .
 ├── core
 │ └── models
@@ -27,6 +28,7 @@ Inside `app` folder there are several new directories as you can see in the foll
 │ ├── reducers
 │ └── selectors
 └── ...
+```
 
 ## 🔥 Install dependencies
 
