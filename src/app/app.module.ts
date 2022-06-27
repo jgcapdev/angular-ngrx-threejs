@@ -11,11 +11,13 @@ import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter/counter.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
+import { PokemonListComponent } from './pokemon/pokemon-list/pokemon-list.component';
 
 // ngrx modules
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './counter/state/counter.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { pokemonsReducer } from './state/reducers/pokemons.reducer';
 
 // angular three
 import { NgtCanvasModule } from '@angular-three/core';
@@ -45,11 +47,12 @@ import { environment } from 'src/environments/environment';
     CounterButtonsComponent,
     CounterOutputComponent,
     CounterComponent,
+    PokemonListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({ counter: counterReducer }),
+    StoreModule.forRoot({ counter: counterReducer, pokemons: pokemonsReducer }),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,

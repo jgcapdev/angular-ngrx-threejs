@@ -4,19 +4,19 @@ import { initialState } from './counter.state';
 
 const _counterReducer = createReducer(
   initialState,
-  on(increment, (state: any) => {
+  on(increment, (state) => {
     return {
       ...state,
       counter: state.counter + 1,
     };
   }),
-  on(decrement, (state: any) => {
+  on(decrement, (state) => {
     return {
       ...state,
       counter: state.counter - 1,
     };
   }),
-  on(reset, (state: any) => {
+  on(reset, (state) => {
     return {
       ...state,
       counter: 0,

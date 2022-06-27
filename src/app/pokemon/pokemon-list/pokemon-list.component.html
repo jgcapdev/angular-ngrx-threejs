@@ -1,0 +1,7 @@
+<b *ngIf="loading$ | async">Cargando...</b>
+<ul>
+  <li *ngFor="let pokemon of pokemons$ | async">
+    {{ pokemon.name }} -
+    <a href="{{ pokemon.url }}" target="_blank">Ver Pokemon</a>
+  </li>
+</ul>
