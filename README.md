@@ -33,7 +33,7 @@ Inside `app` folder there are several new directories as you can see in the foll
 ## 🔥 Install dependencies
 
 - Install Angular Three with `npm install --save-dev @angular-three/schematics ` and `npx nx generate @angular-three/schematics:init`
-- Install NGRX with `nnpm install @ngrx/store --save`.
+- Install NGRX with `npm install @ngrx/store --save`.
 - Install NgRx DevToos with `npm install @ngrx/store-devtools --save --legacy-peer-deps` and add
 
 ```js
