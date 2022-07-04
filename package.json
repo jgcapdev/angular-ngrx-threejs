@@ -13,7 +13,7 @@
     "@angular-three/core": "^5.0.0",
     "@angular-three/soba": "^5.5.0",
     "@angular/animations": "^14.0.3",
-    "@angular/common": "^14.0.0",
+    "@angular/common": "^14.0.4",
     "@angular/compiler": "^14.0.3",
     "@angular/core": "^14.0.0",
     "@angular/forms": "^14.0.3",
